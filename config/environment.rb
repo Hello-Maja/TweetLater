@@ -43,7 +43,7 @@ require APP_ROOT.join('config', 'database')
 #   config.consumer_secret = ENV['TWITTER_SECRET']
 # end
 
-env_config = YAML.load_file(APP_ROOT.join('config', 'twitter.yaml'))
+# env_config = YAML.load_file(APP_ROOT.join('config', 'twitter.yaml'))
 
 env_config.each do |key, value|
   ENV[key] = value
